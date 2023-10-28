@@ -3,7 +3,7 @@ import socket
 import requests
 import builtwith
 
-API_KEY = ''
+API_KEY = '' 
 
 def obtener_resultados_herramienta(herramienta, parametro):
     url = f"https://api.hackertarget.com/{herramienta}/?q={parametro}&apikey={API_KEY}"
