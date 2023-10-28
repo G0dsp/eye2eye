@@ -1,8 +1,8 @@
 import whois
 import socket
 import requests
+import builtwith
 
-print("Para usar la herramienta adecuadamente deberas introducir tu API KEY de hackertarget en el codigo!")
 API_KEY = ''
 
 def obtener_resultados_herramienta(herramienta, parametro):
@@ -41,6 +41,16 @@ def escanear_puertos(direccion_ip, puertos):
         sock.close()
     
     return resultados
+
+def obtener_info_sitio(url):
+    result = builtwith.parse(url)
+    
+    servidor = result.get('web-servers', ['Desconocido'])[0]
+    cms = result.get('cms', ['Desconocido'])[0]
+    lenguaje = result.get('programming-languages', ['Desconocido'])[0]
+    js_framework = result.get('javascript-frameworks', ['Desconocido'])[0]
+    
+    return servidor, cms, lenguaje, js_framework
 
 if __name__ == "__main__":
     dominio = input("Ingrese el dominio para buscar información: ")
@@ -83,3 +93,9 @@ if __name__ == "__main__":
         print("\n".join(resultados_escaneo))
     except socket.gaierror:
         print("\nNo se pudo resolver la dirección IP del dominio.")
+    
+    servidor, cms, lenguaje, js_framework = obtener_info_sitio(f"https://{dominio}")
+    print(f"\nSERVIDOR --> {servidor}")
+    print(f"CMS DETECTADO --> {cms}")
+    print(f"LENGUAJE DETECTADO --> {lenguaje}")
+    print(f"JAVASCRIPT FRAMEWORK --> {js_framework}")
