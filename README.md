@@ -22,4 +22,4 @@ In summary, Eye2Eye provides a comprehensive suite of methods for gathering data
 
 IMPORTANT YOU NEED TO USE HACKERTARGET API FOR THIS PROJECT TO HAVE A BETTER WORKING EXPERIENCE
 
-HAPPY HACKING!!!1
+HAPPY HACKING!!!
