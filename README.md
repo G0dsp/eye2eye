@@ -19,3 +19,7 @@ Hackertarget Tools: Employs various Hackertarget tools for performing cyber inte
 Moreover, the tool now saves the results of these operations into a text file, facilitating convenient review and analysis of the collected information.
 
 In summary, Eye2Eye provides a comprehensive suite of methods for gathering data about a specific domain. It empowers cybersecurity professionals and cyber intelligence analysts to gain a holistic view of the digital infrastructure associated with that domain, enabling informed decision-making in the realm of cybersecurity.
+
+IMPORTANT YOU NEED TO USE HACKERTARGET API FOR THIS PROJECT TO HAVE A BETTER WORKING EXPERIENCE
+
+HAPPY HACKING!!!1
