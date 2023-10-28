@@ -1,8 +1,8 @@
 # eye2eye
 ![image](https://github.com/G0dsp/eye2eye/assets/88639130/3fea32d0-e2be-4c7c-8adb-5e1c171539dc)
 
-  Eye2Eye is a Python-based cyber intelligence tool WORKING FOR WOLRD WIDE DOMAINS
-  Eye2Eye is tailored to retrieve crucial insights about a specified domain.
+    Eye2Eye is a Python-based cyber intelligence tool WORKING FOR WOLRD WIDE DOMAINS
+    Eye2Eye is tailored to retrieve crucial insights about a specified domain.
 ![image](https://github.com/G0dsp/eye2eye/assets/88639130/7089fd8e-2aab-442b-a3b3-71a4b9db5276)
 
 
