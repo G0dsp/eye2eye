@@ -2,7 +2,8 @@ import whois
 import socket
 import requests
 
-API_KEY = '171e79ea7cce70d739f54b12422aa6a9c16fc33d2a7cdeec41fbe391bc92b6e065db60a66b0c6352'
+print("Para usar la herramienta adecuadamente deberas introducir tu API KEY de hackertarget en el codigo!")
+API_KEY = ''
 
 def obtener_resultados_herramienta(herramienta, parametro):
     url = f"https://api.hackertarget.com/{herramienta}/?q={parametro}&apikey={API_KEY}"
