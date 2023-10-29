@@ -2,8 +2,9 @@ import whois
 import socket
 import requests
 import builtwith
+import ssl
 
-API_KEY = '' 
+API_KEY = ''
 
 def obtener_resultados_herramienta(herramienta, parametro):
     url = f"https://api.hackertarget.com/{herramienta}/?q={parametro}&apikey={API_KEY}"
@@ -52,10 +53,24 @@ def obtener_info_sitio(url):
     
     return servidor, cms, lenguaje, js_framework
 
+def obtener_info_ssl(dominio):
+    try:
+        contexto = ssl.create_default_context()
+        with contexto.wrap_socket(socket.socket(), server_hostname=dominio) as s:
+            s.connect((dominio, 443))
+            cert = s.getpeercert()
+            return cert
+    except Exception as e:
+        return f"Error al obtener información SSL: {str(e)}"
+
+def imprimir_info_ssl(cert):
+    print("Información del certificado SSL:")
+    for campo, valor in cert.items():
+        print(f"{campo}: {valor}")
+
 if __name__ == "__main__":
     dominio = input("Ingrese el dominio para buscar información: ")
     
-    # Agregar resultados de herramientas de Hackertarget
     herramientas = [
         "mtr",
         "nping",
@@ -99,3 +114,8 @@ if __name__ == "__main__":
     print(f"CMS DETECTADO --> {cms}")
     print(f"LENGUAJE DETECTADO --> {lenguaje}")
     print(f"JAVASCRIPT FRAMEWORK --> {js_framework}")
+    
+    print("\n")
+    # Agregar análisis de SSL
+    info_ssl = obtener_info_ssl(dominio)
+    imprimir_info_ssl(info_ssl)
