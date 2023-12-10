@@ -1,25 +1,50 @@
-# eye2eye
-![image](https://github.com/G0dsp/eye2eye/assets/88639130/3fea32d0-e2be-4c7c-8adb-5e1c171539dc)
+# Eye2Eye
 
-    Eye2Eye is a Python-based cyber intelligence tool WORKING FOR WOLRD WIDE DOMAINS
-    Eye2Eye is tailored to retrieve crucial insights about a specified domain.
-![image](https://github.com/G0dsp/eye2eye/assets/88639130/7089fd8e-2aab-442b-a3b3-71a4b9db5276)
+![Eye2Eye](https://github.com/G0dsp/eye2eye/assets/88639130/3fea32d0-e2be-4c7c-8adb-5e1c171539dc)
 
+Eye2Eye is a sophisticated Python-based cyber intelligence tool designed for global domains. This tool is meticulously crafted to extract essential insights about specified domains.
 
- It encompasses a range of functionalities:
+![Eye2Eye](https://github.com/G0dsp/eye2eye/assets/88639130/7089fd8e-2aab-442b-a3b3-71a4b9db5276)
 
-Reverse IP Lookup: Offers a list of domains sharing the same IP address as the input domain, potentially unveiling connections between different domains.
+## Key Features
 
-WHOIS Lookup: Retrieves comprehensive details about domain registration, including owner information, contact details, and registrar specifics.
+1. **Reverse IP Lookup:** Provides a comprehensive list of domains sharing the same IP address as the input domain, potentially revealing connections between different domains.
 
-Port Scanning: Scans a range of ports on the IP address associated with the domain to determine which ones are open and potentially susceptible to attacks.
+2. **WHOIS Lookup:** Retrieves exhaustive details about domain registration, including owner information, contact details, and registrar specifics.
 
-Hackertarget Tools: Employs various Hackertarget tools for performing cyber intelligence operations, including MTR Traceroute, Ping, DNS Lookup, Reverse DNS Lookup, IP Geolocation, Reverse IP Lookup, Fetching HTTP Headers, Page Link Retrieval, and AS Lookup.
+3. **Port Scanning:** Conducts a thorough scan of ports on the IP address associated with the domain, identifying open ports susceptible to potential attacks.
 
-Moreover, the tool now saves the results of these operations into a text file, facilitating convenient review and analysis of the collected information.
+4. **Hackertarget Tools:** Leverages various Hackertarget tools for executing cyber intelligence operations, including MTR Traceroute, Ping, DNS Lookup, Reverse DNS Lookup, IP Geolocation, Reverse IP Lookup, Fetching HTTP Headers, Page Link Retrieval, and AS Lookup.
 
-In summary, Eye2Eye provides a comprehensive suite of methods for gathering data about a specific domain. It empowers cybersecurity professionals and cyber intelligence analysts to gain a holistic view of the digital infrastructure associated with that domain, enabling informed decision-making in the realm of cybersecurity.
+## Results Saving
 
-IMPORTANT YOU NEED TO USE HACKERTARGET API FOR THIS PROJECT TO HAVE A BETTER WORKING EXPERIENCE
+Eye2Eye now conveniently saves the results of these operations into a text file, streamlining the review and analysis of the collected information.
 
-HAPPY HACKING!!!
+## Usage
+
+1. Install the required dependencies:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+2. Set up the necessary API keys by creating a `.env` file with the following content:
+
+    ```env
+    HACKERTARGET_API_KEY=your_hackertarget_api_key
+    VIRUSTOTAL_API_KEY=your_virustotal_api_key
+    ```
+
+3. Run the Eye2Eye tool:
+
+    ```bash
+    python eye2eye.py
+    ```
+
+**Note:** Ensure the use of the [Hackertarget API](https://hackertarget.com/) and the [VirusTotal API](https://www.virustotal.com/) for an enhanced working experience.
+
+## Contribution
+
+Contributions to the project are welcome! Feel free to contribute and enhance its capabilities. Your efforts are highly appreciated.
+
+Happy hacking!
